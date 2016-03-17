@@ -19,13 +19,13 @@
     <script>
         System.config({
             packages: {
-                app: {
+                ch01: {
                     format: 'register',
                     defaultExtension: 'js'
                 }
             }
         });
-        System.import('ch01/main')
+        System.import('./ch01/main')
                 .then(null, console.error.bind(console));
     </script>
 </head>
