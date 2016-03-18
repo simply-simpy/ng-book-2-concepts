@@ -15,8 +15,10 @@ class Person {
 
 @Component({
     selector: 'my-app',
-    template: `<h1>Hello {{ person.name }}.
-    Your birthday is {{ person.DOB}}, and your age is {{ person.age }} years old. Your address is {{ person.address }}
+    template: `<h1>Hello {{ person.name }}.<br>
+        Your birthday is {{ person.DOB}},<br>
+        and your age is {{ person.age }} years old.<br>
+        Your address is {{ person.address }}
     </h1>
     <p>change age:</p>
     <button (click)="increaseAge()">Increase age</button>
@@ -31,12 +33,12 @@ export class IsolateDataModel {
         this.person = new Person("Scott", "May 7", "511 NW Flanders", 21)
     }
 
-    increaseAge(){
+    increaseAge(): boolean {
         this.person.age ++;
         return false;
     }
 
-    decreaseAge(){
+    decreaseAge(): boolean {
         this.person.age --;
         return false;
     }
