@@ -24,7 +24,7 @@ export class IsolateDataModel {
     person: Person;
 
     constructor(){
-        this.person = new Person("Scott", "May 7", "511 NW Flanders", 21)
+        this.person = new Person("Scott", "May 7", "100 SW Flanders", 21)
     }
 
 }

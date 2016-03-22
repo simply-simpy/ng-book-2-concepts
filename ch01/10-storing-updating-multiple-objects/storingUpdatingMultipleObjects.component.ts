@@ -36,10 +36,10 @@ export class StoringUpdatingMultipleObjects {
     persons: Person[];
     constructor(){
         this.persons = [
-            new Person("Scott", "May 7", "511 NW Flanders", 29),
-            new Person("Robert", "January 23", "110 Smith", 25),
-            new Person("Shane", "October 9", "4532 North Ave", 28),
-            new Person("Danny", "August 21", "989 West Elm", 21)
+            new Person("Scott", "May 7", "100 SW Flanders", 29),
+            new Person("Bob", "January 23", "110 Smith", 25),
+            new Person("Shiner", "October 9", "4532 North Ave", 28),
+            new Person("Rugout", "August 21", "989 West Elm", 21)
         ]
     }
 }

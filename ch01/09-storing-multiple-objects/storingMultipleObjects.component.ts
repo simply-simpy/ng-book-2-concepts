@@ -29,10 +29,10 @@ export class StoringMultipleObjects {
 
     constructor(){
         this.persons = [
-            new Person("Scott", "May 7", "511 NW Flanders", 29),
-            new Person("Robert", "January 7", "110 Smith", 25),
-            new Person("Shane", "October 7", "4532 North Ave", 28),
-            new Person("Danny", "August 21", "989 West Elm", 19)
+            new Person("Scott", "May 7", "100 SW Flanders", 29),
+            new Person("Red", "January 7", "110 Smith", 25),
+            new Person("Shiner", "October 7", "4532 North Ave", 28),
+            new Person("Don", "August 21", "989 West Elm", 19)
         ]
     }
 

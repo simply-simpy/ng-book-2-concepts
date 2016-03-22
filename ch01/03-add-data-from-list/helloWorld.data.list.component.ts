@@ -11,7 +11,7 @@ export class HelloWorldDataListComponent {
     names: string[];
 
     constructor(){
-        this.names = ["Scott", "Shane", "Robert", "Danny"];
+        this.names = ["Bob", "Gene", "Roger", "Elvin"];
     }
 
 }
