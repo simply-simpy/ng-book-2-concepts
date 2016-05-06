@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {InputComponent} from './input.component';
 
 class Dog {
@@ -14,7 +14,7 @@ class Dog {
     selector: 'my-app',
     directives: [InputComponent],
     template: `<the-input
-                         *ngFor = "#dog of dogs"
+                         *ngFor = "let dog of dogs"
                          [dog] = "dog"> 
               </the-input>
               

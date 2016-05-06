@@ -16,4 +16,6 @@ run:
 
 
 ##Current status
-Chapter 1 complete
+Chapter 2 complete
+
+Updated to RC.1

@@ -1,3 +1,3 @@
-import {bootstrap}    from 'angular2/platform/browser'
-import {DataModel} from './dataModel.component'
+import { bootstrap } from '@angular/platform-browser-dynamic'
+import { DataModel } from './dataModel.component'
 bootstrap(DataModel);

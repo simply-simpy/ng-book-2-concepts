@@ -1,3 +1,3 @@
-import {bootstrap}    from 'angular2/platform/browser'
-import {HelloWorldDataListComponent} from './helloWorld.data.list.component'
+import { bootstrap }    from '@angular/platform-browser-dynamic';
+import {HelloWorldDataListComponent} from './helloWorld.data.list.component';
 bootstrap(HelloWorldDataListComponent);

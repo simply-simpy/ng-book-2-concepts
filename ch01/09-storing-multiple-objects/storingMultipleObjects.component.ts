@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core'
+import { Component } from '@angular/core'
 
 class Person {
     name: string
@@ -18,7 +18,7 @@ class Person {
     selector: 'my-app',
     template: `
     <p
-      *ngFor="#person of persons">Hello {{ person.name }} your birthday is {{ person.DOB }}.
+      *ngFor="let person of persons">Hello {{ person.name }} your birthday is {{ person.DOB }}.
       Your address is {{ person.address }}, and you are {{ person.age }} years old.
     </p>
     `
