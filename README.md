@@ -8,7 +8,7 @@ run:
 
 update:
 
-`packages path and system.import path in index.html to point to concept directory`
+`update map object and packages object in systemjs.config.js to point to proper directory`
 
 run:
 
