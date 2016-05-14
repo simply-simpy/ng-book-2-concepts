@@ -14,8 +14,8 @@ class Dog {
     selector: 'my-app',
     directives: [InputComponent],
     template: `<the-input
-                         *ngFor = "let dog of dogs"
-                         [dog] = "dog"> 
+                         *ngFor = "let doggy of dogs"
+                         [dog] = "doggy"> 
               </the-input>`
 })
 
@@ -28,6 +28,7 @@ export class MyApp{
         ]
     }
 }
+
 
 
 
