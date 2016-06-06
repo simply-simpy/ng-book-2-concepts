@@ -16,7 +16,7 @@ class Person {
 })
 
 export class InputComponent {
-    persons: Person[]
+    persons: Person[];
     constructor(){
         this.persons = [
             new Person("Scott", 32),

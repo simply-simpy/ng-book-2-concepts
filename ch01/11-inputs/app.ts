@@ -13,10 +13,7 @@ class Dog {
 @Component({
     selector: 'my-app',
     directives: [InputComponent],
-    template: `<the-input
-                         *ngFor = "let doggy of dogs"
-                         [dog] = "doggy"> 
-              </the-input>`
+    template: `<the-input *ngFor = "let doggy of dogs" [dog] = "doggy"></the-input>`
 })
 
 export class MyApp{

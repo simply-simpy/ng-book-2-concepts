@@ -15,7 +15,7 @@ class Dog {
     directives: [InputComponent],
     template: `<the-input
                          *ngFor = "let dog of dogs"
-                         [dog] = "dog"> 
+                         [dog] = "dog">
               </the-input>
               
               <form>
