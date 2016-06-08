@@ -1,5 +1,5 @@
 import {bootstrap} from '@angular/platform-browser-dynamic';
+import {Counter} from './app';
 
-import {InventoryApp} from './app';
+bootstrap(Counter);
 
-bootstrap(InventoryApp);
