@@ -10,7 +10,7 @@
  *  1. Show three dogs from pet finder site
  *  2. Have: name, age, breed, phone # to adopt, image
  *  3. Show breadcrumbs for type, breed, age
- *  4. Make components for image, breadcrumbs, 
+ *  4. Make components for image, breadcrumbs,
  */
 
 import {
@@ -208,4 +208,3 @@ export class InventoryApp {
     }
 }
 
-//bootstrap(InventoryApp);
