@@ -180,7 +180,7 @@ class ProductsList {
   </div>
   `
 })
-export class InventoryApp {
+export class InventoryAp  {
     products: Product[];
 
     constructor() {
