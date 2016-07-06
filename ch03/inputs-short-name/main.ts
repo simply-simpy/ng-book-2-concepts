@@ -1,8 +1,8 @@
 import {bootstrap} from '@angular/platform-browser-dynamic';
 
-import {InventoryApp} from './app';
+import {App} from './app';
 
-bootstrap(InventoryApp);
+bootstrap(App);
 
 
 

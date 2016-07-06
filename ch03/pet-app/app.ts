@@ -83,7 +83,7 @@ class PetDescription {}
  */
 
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
     directives: [PetImage, PetName, PetBreed, PetColor, PetDescription],
     styles: [':host { display: flex; align-content: stretch; justify-content: space-between; }'],
     template: `

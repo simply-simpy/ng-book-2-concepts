@@ -5,35 +5,32 @@ import {Component, EventEmitter} from '@angular/core';
     selector: 'single-component',
     outputs: ['putRingOnIt'],
     template: `
+        <p>Message logs to console:</p>
         <button (click)="liked()">Like It</button>
-    
     `
 })
 
-export class SingleComponent {
-    putRingOnIt: EventEmitter<string>;
+class SingleComponent {
 
-    constructor(){
-        this.putRingOnIt = new EventEmitter();
-    }
+    putRingOnIt = new EventEmitter<string>();
 
     liked(): void {
         this.putRingOnIt.emit("oh oh oh");
     }
 }
 
+
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
+    directives: [SingleComponent],
     template: `
-        <div>
-            <single-component>
-                (putRingOnIt)="ringWasPlaced($event)"
-            </single-component>
-        </div>
-    `
+             <single-component (putRingOnIt)="ringWasPlaced($event)"></single-component> 
+             <p></p>
+        `
 })
-    class ClubComponent {
-        ringWasPlaced(message: string){
-            console.log(`Put your hands up: ${message}`)
-        }
+
+export class App {
+    ringWasPlaced(message: string){
+        console.log(`Put your hands up: ${message}`);
     }
+}

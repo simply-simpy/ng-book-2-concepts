@@ -17,8 +17,9 @@ class TheMember {
 }
 
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
     directives: [TheMember],
+    outputs: ['onMemberSelected'],
     styles: ['.selected {outline: 1px solid orange; display:block} '],
     template: `
         <div *ngFor="let member of members">
@@ -30,10 +31,11 @@ class TheMember {
         </div>
         `
 })
-export class InventoryApp {
+export class App {
     memberList: Member[];
     onMemberSelected: EventEmitter<Member>;
     currentMember: Member;
+    formerMember: Member;
 
     members: Member[];
     constructor(){
@@ -45,8 +47,11 @@ export class InventoryApp {
     }
    clicked(member: Member): void {
        this.currentMember = member;
+       this.formerMember = member;
        this.onMemberSelected.emit(member);
        console.log('clicked on: ' + member.name)
+       console.log('current member: ' + this.currentMember.name)
+       console.log('former member: ' + this.formerMember.name)
 
    }
     isSelected(member: Member): boolean {

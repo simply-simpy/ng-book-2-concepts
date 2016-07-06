@@ -17,7 +17,7 @@ class TheMember {
 }
 
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
     directives: [TheMember],
     template: `
         <div>
@@ -25,7 +25,7 @@ class TheMember {
         </div>
         `
 })
-export class InventoryApp {
+export class App {
     member: Member;
     constructor(){
         this.member = new Member('Scott', '555-555-5555')

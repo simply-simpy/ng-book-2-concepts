@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
     template: `
         {{ value }}
         <button (click)="increase()">Increase</button>
@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
     `
 })
 // Output event we are listening for is click event
-export class Counter {
+export class App {
     value: number;
 
     constructor(){

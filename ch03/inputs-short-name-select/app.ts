@@ -17,7 +17,7 @@ class TheMember {
 }
 
 @Component({
-    selector: 'inventory-app',
+    selector: 'app',
     directives: [TheMember],
     template: `
         <div *ngFor="let member of members">
@@ -25,7 +25,7 @@ class TheMember {
         </div>
         `
 })
-export class InventoryApp {
+export class App {
     members: Member[];
     constructor(){
         this.members = [
