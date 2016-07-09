@@ -5,12 +5,12 @@ import {Component} from '@angular/core';
     template: `
         <div class="input">
             <label>Color<br>
-                <input type="text" name="color" value="{{ color }}" #colorInput>
+                <input type="text" name="color" value="" #colorInput>
             </label>
         </div>
         <div class="input">
             <label>Font Size<br>
-                <input type="text" name="fontSize" value="{{ fontSize }}" #fontInput>
+                <input type="text" name="fontSize" value="" #fontInput>
             </label>
         </div>
         <div class="results">
