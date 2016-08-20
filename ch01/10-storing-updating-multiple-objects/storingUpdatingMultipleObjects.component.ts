@@ -32,7 +32,7 @@ class Person {
     `
 })
 
-export class StoringUpdatingMultipleObjects {
+export class StoringUpdatingMultipleObjectsComponent {
     persons: Person[];
     constructor(){
         this.persons = [

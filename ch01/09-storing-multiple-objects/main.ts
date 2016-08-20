@@ -1,3 +1,3 @@
-import {bootstrap}    from '@angular/platform-browser-dynamic'
-import {StoringMultipleObjects} from './storingMultipleObjects.component'
-bootstrap(StoringMultipleObjects);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+platformBrowserDynamic().bootstrapModule(AppModule);

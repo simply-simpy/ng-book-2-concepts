@@ -16,7 +16,7 @@ class Dog {
     template: `<the-input *ngFor = "let doggy of dogs" [dog] = "doggy"></the-input>`
 })
 
-export class MyApp{
+export class AppComponent {
     dogs: Dog[];
     constructor(){
         this.dogs = [

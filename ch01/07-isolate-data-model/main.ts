@@ -1,3 +1,3 @@
-import {bootstrap}  from '@angular/platform-browser-dynamic'
-import {IsolateDataModel} from './isolateDataModel.component'
-bootstrap(IsolateDataModel);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+platformBrowserDynamic().bootstrapModule(AppModule);

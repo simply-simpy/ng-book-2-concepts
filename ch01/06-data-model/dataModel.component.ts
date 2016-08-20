@@ -7,7 +7,7 @@ import {Component} from '@angular/core'
     </h1>`
 })
 
-export class DataModel {
+export class DataModelComponent {
     name: string;
     DOB: string;
     address: string

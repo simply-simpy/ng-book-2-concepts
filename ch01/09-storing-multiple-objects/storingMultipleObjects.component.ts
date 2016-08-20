@@ -24,7 +24,7 @@ class Person {
     `
 })
 
-export class StoringMultipleObjects {
+export class StoringMultipleObjectsComponent {
     persons: Person[];
 
     constructor(){

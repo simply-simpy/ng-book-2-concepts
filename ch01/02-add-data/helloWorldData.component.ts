@@ -9,7 +9,7 @@ export class HelloWorldDataComponent {
     name: string;
 
     constructor(){
-        this.name = "Scott";
+        this.name = "Buster";
     }
 
 }

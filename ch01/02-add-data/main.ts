@@ -1,3 +1,4 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { HelloWorldDataComponent } from './helloWorld.data.component'
-bootstrap(HelloWorldDataComponent);
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+platformBrowserDynamic().bootstrapModule(AppModule);

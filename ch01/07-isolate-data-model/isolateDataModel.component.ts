@@ -20,7 +20,7 @@ class Person {
     </h1>`
 })
 
-export class IsolateDataModel {
+export class IsolateDataModelComponent {
     person: Person;
 
     constructor(){

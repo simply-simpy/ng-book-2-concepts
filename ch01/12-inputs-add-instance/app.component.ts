@@ -2,9 +2,9 @@ import {Component} from '@angular/core';
 import {InputComponent} from './input.component';
 
 class Dog {
-    age: number;
+    age: string;
     name: string;
-    constructor(age: number, name:string ){
+    constructor(age: string, name:string ){
         this.age = age;
         this.name = name;
     }
@@ -14,8 +14,8 @@ class Dog {
     selector: 'my-app',
     directives: [InputComponent],
     template: `<the-input
-                         *ngFor = "let dog of sortedDogs()"
-                         [dog] = "dog"> 
+                         *ngFor = "let dog of dogs"
+                         [dog] = "dog">
               </the-input>
               
               <form>
@@ -31,28 +31,22 @@ class Dog {
             `
 })
 
-export class MyApp{
+export class AppComponent{
     dogs: Dog[];
     constructor(){
         this.dogs = [
-            new Dog(8, "Buster"),
-            new Dog(10, "Maggie"),
-            new Dog(5, "Gertrude")
+            new Dog("10", "Maggie"),
+            new Dog("8", "Buster")
         ]
     }
 
-    addDog(age: any, name: HTMLInputElement): void {
+    addDog(age: HTMLInputElement, name: HTMLInputElement): boolean {
         console.log(`Adding dog age: ${age.value} and named: ${name.value}`);
         this.dogs.push(new Dog(age.value, name.value));
         age.value = '';
         name.value = '';
+        return false;
     }
-
-    sortedDogs():Dog[] {
-        return this.dogs.sort((a: Dog, b: Dog) =>  a.age - b.age );
-    }
-
-
 }
 
 
