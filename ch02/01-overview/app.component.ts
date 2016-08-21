@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core'
+import {Component} from '@angular/core';
 
 @Component({
     selector: "my-app",
@@ -16,9 +16,10 @@ import {Component} from 'angular2/core'
                         <li>Example
                             <code>
 <pre>
-function greetText(name: string): string {
+
+function greetText(name: string): string {{ '{' }}
     return "Hello " + name;
-}
+{{ '}' }}
 </pre>
                             </code>
                         </li> 
@@ -33,16 +34,16 @@ function greetText(name: string): string {
                                 <li><strong>enums</strong>
                                     <code>
 <pre>
-enum Role {Employee, Manager, Admin};
+enum Role {{ '{' }}Employee, Manager, Admin{{ '}' }};
 var role: Role = Role.Employee;
 
-enum Role {Employee = 3, Manager, Admin};
+enum Role {{ '{' }}Employee = 3, Manager, Admin{{ '}' }};
 var role: Role = Role.Employee;
 
-enum Role {Employee = 3, Manager = 5, Admin = 7};
+enum Role {{ '{' }}Employee = 3, Manager = 5, Admin = 7{{ '}' }};
 var role: Role = Role.Employee;
 
-enum Role {Employee, Manager, Admin};
+enum Role {{ '{' }}Employee, Manager, Admin{{ '}' }};
 console.log('Roles: ', Role[0], ',', Role[1], 'and', Role[2]);
 </pre>
                                     </code> 
@@ -58,9 +59,9 @@ something = [1, 2, 3];
                             <li><strong>Void</strong> no type expected, usually in functions with no return value</li>
 <code>
 <pre>
-function setName(name: string): void {
+function setName(name: string): void {{ '{' }}
 	this.name = name;
-}  
+{{ '}' }}
 </pre>                          
 </code>
                             </ul>
@@ -76,11 +77,11 @@ function setName(name: string): void {
                         <li>
 <code>
 <pre>
-class Person {
+class Person {{ '{' }}
 	first_name: string;
 	last_name: string;
  	age: number;
-}
+{{ '}' }}
 </pre>
 </code>                        
                        </li>
@@ -88,26 +89,25 @@ class Person {
                         <li>
 <code>
 <pre>
-class Person {
+class Person {{ '{' }}
 	first_name: string;
 	last_name: string;
  	age: number;
-}
+{{ '}' }}
 </pre>
 </code>                        
                        </li>
                        <li>To instantiate a class we use the <code>new</code> keyword
 <code>
 <pre>
-class Person {
+class Person {{ '{' }}
 	first_name: string;
 	last_name: string;
 	age: number;
 
- greet() {
-	console.log("Hello", this.first_name);
-  }
-}
+ greet() {{ '{' }}
+  {{ '{' }}
+{{ '}' }}
 
 </pre>
 </code>
@@ -129,19 +129,19 @@ p.greet();”
 </code>
 <code>
 <pre>
-class Person {
+class Person {{ '{' }}
  	first_name: string;
 	last_name: string;
 	age: number;
   
-        greet() {
+        greet() {{ '{' }}
          	console.log("Hello", this.first_name);
-        }
+        {{ '}' }}
 
-ageInYears(years: number): number {
+ageInYears(years: number): number {{ '{' }}
       return this.age + years;
-			}
-}
+			{{ '}' }}
+{{ '}' }}
 // instantiate a new Person instance
 var p: Person = new Person();
 
@@ -158,25 +158,25 @@ p.ageInYears(12);
 <li><strong>Constructors</strong> A constructor is a special method that is executed when a new instance of the class is being created. Usually, the constructor is where you perform any initial setup for new objects.
     <code>
 <pre>
-class Person {
+class Person {{ '{' }}
     first_name: string;
     last_name: string;
     age: number;
 
-    constructor(first_name: string, last_name: string, age: number) {
+    constructor(first_name: string, last_name: string, age: number) {{ '{' }}
     this.first_name = first_name;
     this.last_name = last_name;
     this.age = age;
-}
+{{ '}' }}
 
-	greet() {
+	greet() {{ '{' }}
   	    console.log("Hello", this.first_name);
-    }
+   {{ '}' }}
 
- 	ageInYears(years: number): number {
+ 	ageInYears(years: number): number {{ '{' }}
      	return this.age + years;
-	}
-}
+	{{ '}' }}
+{{ '}' }}
 
 </pre>
 </code>
@@ -232,7 +232,7 @@ var firstName = "Nate";
 var lastName = "Murray";
 
 // interpolate a string
-// var greeting = Hello $ {firstName} $ {lastName} 
+// var greeting = Hello $ {{ '{' }}firstName{{ '}' }} $ {{ '{' }}lastName{{ '}' }} 
 
 console.log(greeting);
 </code> 
@@ -243,4 +243,4 @@ console.log(greeting);
         `
 })
 
-export class MyApp{}
+export class AppComponent{}
