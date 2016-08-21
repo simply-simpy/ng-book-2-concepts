@@ -8,7 +8,7 @@ run:
 
 update:
 
-`update map object and packages object in systemjs.config.js to point to proper directory`
+`update map object in systemjs.config.js to point to proper directory`
 
 run:
 
@@ -17,12 +17,7 @@ run:
 
 ##Current status
 
-Chapter 3 begun. 
-pet-app provides example  passing multiple components into one main component. 
-Removes some of the complexity of the inventory app code example.
+Ch4 complete. May be instances where selector name should be updated to 'my-app'. Not up to date with RC5.
+Ch1-Ch3 up to data with NG RC5
 
-inventory-app example is not working in this repo, see book for proper code.
-
-Chapter 2 complete
-
-Updated to RC.1
+inventory-app example is not working in this repo (CH3), see book for proper code.

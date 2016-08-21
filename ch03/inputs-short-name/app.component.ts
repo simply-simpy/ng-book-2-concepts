@@ -17,23 +17,21 @@ class TheMember {
 }
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [TheMember],
     template: `
-        <div *ngFor="let member of members">
-            <the-member (click)="productWasSelected($event)" [m]="member"></the-member>
+        <div>
+            <the-member [m]="member"></the-member>
         </div>
         `
 })
-export class App {
-    members: Member[];
+export class AppComponent {
+    member: Member;
     constructor(){
-        this.members = [
-            new Member('Scott', '555-555-5555'),
-            new Member('Buster', '555-123-4567'),
-        ]
-    }
-    productWasSelected(member: Member): void {
-        console.log('Member clicked: ', member)
+        this.member = new Member('Scott', '555-555-5555')
     }
 }
+
+//InventoryApp
+
+// create constructor for members which has name and phone number, component will display this info

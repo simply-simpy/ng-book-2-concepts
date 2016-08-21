@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     template: `
         <div class="app">
             <h1>Dynamic classes</h1>
             <p 
             (click)="clicked()"
             [class.selected]="selected">
-            This is classes
+            Click to add dynamic class
             </p>
         </div>
     `,

@@ -17,7 +17,7 @@ class TheMember {
 }
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [TheMember],
     outputs: ['onMemberSelected'],
     styles: ['.selected {outline: 1px solid orange; display:block} '],
@@ -31,7 +31,7 @@ class TheMember {
         </div>
         `
 })
-export class App {
+export class AppComponent {
     memberList: Member[];
     onMemberSelected: EventEmitter<Member>;
     currentMember: Member;

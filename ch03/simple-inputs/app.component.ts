@@ -10,7 +10,7 @@ class TheInput {
 }
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     template: `
         <child [passedValue]=theValue></child>
         <form action="">
@@ -20,6 +20,6 @@ class TheInput {
     directives: [TheInput]
 })
 
-export class App {
+export class AppComponent {
    theValue: string = 'Scott';
 }

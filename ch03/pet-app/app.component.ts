@@ -83,7 +83,7 @@ class PetDescription {}
  */
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [PetImage, PetName, PetBreed, PetColor, PetDescription],
     styles: [':host { display: flex; align-content: stretch; justify-content: space-between; }'],
     template: `
@@ -97,7 +97,7 @@ class PetDescription {}
     `
 })
 
-export class App {
+export class AppComponent {
     pets: Pet[];
     constructor(){
         this.pets = [

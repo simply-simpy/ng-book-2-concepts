@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {ChildComponent} from './child.component';
 
 @Component ({
-    selector: 'app',
+    selector: 'my-app',
     styles: ['.parent { background-color: gray; padding: 20px }'],
     template: `
         <div class="parent">
@@ -15,4 +15,4 @@ import {ChildComponent} from './child.component';
     `,
     directives: [ChildComponent]
 })
-export class App {}
+export class AppComponent {}

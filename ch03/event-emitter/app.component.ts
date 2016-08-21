@@ -21,7 +21,7 @@ class SingleComponent {
 
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [SingleComponent],
     template: `
              <single-component (putRingOnIt)="ringWasPlaced($event)"></single-component> 
@@ -29,7 +29,7 @@ class SingleComponent {
         `
 })
 
-export class App {
+export class AppComponent {
     ringWasPlaced(message: string){
         console.log(`Put your hands up: ${message}`);
     }

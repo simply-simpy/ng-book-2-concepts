@@ -169,7 +169,7 @@ class ProductsList {
  * @InventoryApp: the top-level component for our application
  */
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [ProductsList],
     template: `
   <div class="inventory-app">
@@ -180,7 +180,7 @@ class ProductsList {
   </div>
   `
 })
-export class App  {
+export class AppComponent  {
     products: Product[];
 
     constructor() {

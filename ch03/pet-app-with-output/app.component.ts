@@ -83,7 +83,7 @@ class PetDescription {}
  */
 
 @Component({
-    selector: 'app',
+    selector: 'my-app',
     directives: [PetImage, PetName, PetBreed, PetColor, PetDescription],
     outputs: ['onPetSelected'],
     styles: [':host { display: flex; align-content: stretch; justify-content: space-between; } .selected {outline: 1px solid orange;} '],
@@ -101,7 +101,7 @@ class PetDescription {}
     `
 })
 
-export class App {
+export class AppComponent {
     pets: Pet[];
     currentPet: Pet;
     onPetSelected: EventEmitter<Pet>;
