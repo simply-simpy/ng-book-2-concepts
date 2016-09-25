@@ -1,9 +1,7 @@
-import {Component} from '@angular/core'
-import {ParagraphComponent} from './paragraph.component';
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    directives: [ParagraphComponent],
     template: `
         <form>
             <input type="text" name="name" #theName>
