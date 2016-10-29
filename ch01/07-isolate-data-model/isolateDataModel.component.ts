@@ -1,6 +1,6 @@
 import {Component} from '@angular/core'
 class Person {
-    name: string
+    name: string;
     DOB: string;
     address: string;
     age: number;
